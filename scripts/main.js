@@ -42,3 +42,10 @@ scrollToTopBtn.addEventListener('click', () => {
 });
 
 
+// Smooth scrolling for the arrow
+document.querySelector('.bouncing-arrow span').addEventListener('click', () => {
+  document.getElementById('projects').scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  });
+});
